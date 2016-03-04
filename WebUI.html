@@ -1,0 +1,111 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style2 {
+            height: 20px;
+            width: 718px;
+        }
+        .auto-style4 {
+            width: 380px;
+        }
+        .auto-style5 {
+            height: 20px;
+            width: 380px;
+        }
+        .auto-style6 {
+            width: 718px;
+        }
+        .auto-style7 {
+            width: 286px;
+        }
+        .auto-style8 {
+            height: 20px;
+            width: 286px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <h1 style="text-align: center; background-color: #CCCCCC; width: 50%;">Web UI Interface ( Chrome  권장!) </h1>
+	* 기본포트가 서버 종류에 따라 겹치는게 있으니 꼭 확인할것. 
+    <h1>Storm</h1>
+        <table style="border-style: solid; border-width: 1px; width:49%; table-layout: auto; " >
+            <tr>
+                <td class="auto-style4">server</td>
+                <td class="auto-style7">Port</td>
+                <td class="auto-style6">url</td>
+            </tr>
+            <tr>
+                <td class="auto-style4"><b>Nimbus</b></td>
+                <td class="auto-style7">8080</td>
+                <td class="auto-style6"><a href="http://kf-broker-1:8080">http://kf-broker-1:8080</a> </td>
+            </tr>
+            <tr>
+                <td class="auto-style4"><b>logViewer</b></td>
+                <td class="auto-style7">8000</td>
+                <td class="auto-style6"><a href="http://kf-broker-1:8000/log?file=nimbus.log">http://kf-broker-1:8000/log?file=nimbus.log</a> </td>
+            </tr>
+
+
+        </table>
+
+
+    <h1>Hadoop</h1>
+        <table style="border-style: solid; border-width: 1px; width:49%; table-layout: auto; height: 123px;" >
+            <tr>
+                <td class="auto-style4">server</td>
+                <td class="auto-style7">Port</td>
+                <td class="auto-style6">url</td>
+            </tr>
+            <tr>
+                <td class="auto-style4"><b>NameNode</b></td>
+                <td class="auto-style7">50070</td>
+                <td class="auto-style6"><a href="http://hadoop01:50070/" target="_blank">http://hadoop01:50070</a> </td>
+            </tr>
+            <tr>
+                <td class="auto-style4"><b>DataNode</b></td>
+                <td class="auto-style7">50075</td>
+                <td class="auto-style6"><a href="http://hadoop01:50075/" target="_blank">http://hadoop01:50075</a></td>
+            </tr>
+            <tr>
+                <td class="auto-style5"><b>Yarn (ResourceManager)</b></td>
+                <td class="auto-style8">8088</td>
+                <td class="auto-style2"><a href="http://hadoop01:8088/" target="_blank">http://hadoop01:8088</a></td>
+            </tr>
+            <tr>
+                <td class="auto-style4"><b>Job HistoryServer</b></td>
+                <td class="auto-style7">19888</td>
+                <td class="auto-style6"><a href="http://hadoop01:19888/" target="_blank">http://hadoop01:19888</a></td>
+            </tr>
+        </table>
+
+    <h1>Spark</h1>
+        <table style="border-style: solid; border-width: 1px; width:49%; table-layout: auto;" >
+            <tr>
+                <td class="auto-style4">server</td>
+                <td class="auto-style7">Port</td>
+                <td class="auto-style6">url</td>
+            </tr>
+            <tr>
+                <td class="auto-style4"><b>Master</b></td>
+                <td class="auto-style7">8080</td>
+                <td class="auto-style6"><a href="http://hadoop01:8080" target="_blank">http://hadoop01:8080</a>  </td>
+            </tr>
+            <tr>
+                <td class="auto-style4"><b>Worker</b></td>
+                <td class="auto-style7">8081</td>
+                <td class="auto-style6"><a href="http://hadoop01:8081" target="_blank">http://hadoop01:8081</a> </td>
+            </tr>
+
+        </table>
+    
+    </div>
+    </form>
+</body>
+</html>
