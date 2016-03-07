@@ -38,7 +38,13 @@ public class ExampleTopology {
 		StormTopology topology  = builder.createTopology();
 		
 		Config conf = new Config();
+
 		StormSubmitter.submitTopology("my-topology", conf, topology);
+
+
+
+
+
 	}
 
 }
